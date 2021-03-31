@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="189dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtHeader"
+        app:layout_constraintStart_toStartOf="@+id/txtHeader"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
+
+    <TextView
+        android:id="@+id/txtItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtAction"
+        app:layout_constraintStart_toStartOf="@+id/txtAction"
+        app:layout_constraintTop_toBottomOf="@+id/txtAction" />
+
+    <Button
+        android:id="@+id/btnGetToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="GetToken"
+        android:text="Get Token"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnShareToken"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnShareToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="54dp"
+        android:enabled="false"
+        android:onClick="ShareToken"
+        android:text="Share Token"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGetToken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnGetToken"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtToken"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:text="Token: N/A"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetToken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="188dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
