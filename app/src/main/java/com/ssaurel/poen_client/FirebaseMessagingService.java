@@ -13,12 +13,8 @@ import androidx.core.app.NotificationCompat;
 
 import com.google.firebase.messaging.RemoteMessage;
 
-/**
- * Created by Ashish.kapoor on 04.09.2017.
- */
-
 public class FirebaseMessagingService extends  com.google.firebase.messaging.FirebaseMessagingService {
-    private static final String TAG="FirebaseMessagingServic";
+    private static final String TAG="FirebaseMessagingService";
 
     public FirebaseMessagingService() {
     }
